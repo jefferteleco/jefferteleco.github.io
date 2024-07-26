@@ -1,0 +1,150 @@
+
+body {
+font-family: 'Pacifico', sans-serif;
+	background-image: url('fondo.jpg'); /* Imagen de fondo */
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.fondo {
+	background-image: url('fondo.jpg'); /* Imagen de fondo */
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tarjeta {
+transform: translateY(800px);
+  background-color: #F7F7F7;
+  padding: 20px;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  height: 2000px;
+  margin: 100px auto;
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.texto {
+  padding: 20px;
+  text-align: center;
+}
+
+.texto h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+.texto p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.logo {
+	text-align: center;
+img { width: 150px; height: 150px; margin: 20px; }
+
+	margin-bottom: 20px;
+}
+
+.album {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Ajusta el alto según tus necesidades */
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slideshow 10s infinite; /* Ajusta el tiempo según tus necesidades */
+}
+@keyframes slideshow {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.foto {
+
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.foto:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.informacion {
+	margin-top: 20px;
+}
+.mapa {
+  width: 100%;
+  height: 70px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+#mensaje {
+z-index:1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1000px;
+  border: 1px solid #ddd;
+  display: block;
+  transition: opacity 20s;
+}
+
+#mensaje.oculto {
+  opacity: 0;
+}
